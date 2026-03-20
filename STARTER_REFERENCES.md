@@ -1,8 +1,20 @@
 # Starter Reference Screenshots
 
-A curated list of broadly-praised UI references to populate the `/patterns` folders. These are widely available on [Mobbin](https://mobbin.com) (Sites section for web, Apps section for mobile).
+A curated list of broadly-praised UI references to populate the `/patterns` folders.
 
 These aren't the only good references — they're a defensible starting point most developers would agree represent clean, professional UI. Replace or supplement with your own taste.
+
+## Where to Get Screenshots
+
+| Source | Cost | Notes |
+|---|---|---|
+| **[Dribbble](https://dribbble.com)** | Free | Best free option. Search by component: "SaaS dashboard", "mobile onboarding", "empty state UI". Large library, high quality. |
+| **The apps directly** | Free | All the apps listed below (Linear, Vercel, Airbnb, Notion, etc.) have free tiers. Sign up and screenshot the relevant screens yourself — fastest for known targets. |
+| **[Mobbin](https://mobbin.com)** | $120/yr | Most organized. Filtered by app, screen type, and platform. Worth it if you populate pattern folders regularly. |
+
+**Recommended approach:** Use Dribbble or direct app screenshots to get started for free. Upgrade to Mobbin if you find yourself doing this often.
+
+---
 
 ---
 
@@ -168,11 +180,21 @@ These aren't the only good references — they're a defensible starting point mo
 
 ## How to Add These
 
+**Option A — Dribbble (free):**
+1. Go to [dribbble.com](https://dribbble.com) and search for the component type (e.g. "mobile navigation", "SaaS dashboard", "empty state")
+2. Screenshot what you like
+
+**Option B — Direct from the app (free, best for specific targets):**
+1. Sign up for the app (Linear, Vercel, Airbnb, etc. — all have free tiers)
+2. Navigate to the relevant screen and screenshot it
+
+**Option C — Mobbin ($120/yr):**
 1. Open [Mobbin](https://mobbin.com) → Sites (for web) or Apps (for mobile)
 2. Search for each source listed above
-3. Screenshot the relevant screen
-4. Save to the appropriate folder: `patterns/web/[type]/` or `patterns/mobile/[type]/`
-5. Name descriptively: `linear-sidebar-nav.png`, not `screenshot-1.png`
-6. Ask Claude to summarize what makes the patterns good → paste into the folder's `README.md`
+
+**Then for all options:**
+3. Save to the appropriate folder: `patterns/web/[type]/` or `patterns/mobile/[type]/`
+4. Name descriptively: `linear-sidebar-nav.png`, not `screenshot-1.png`
+5. Ask Claude to summarize what makes the patterns good → paste into the folder's `README.md`
 
 Images are gitignored and stay local. The text summaries you write are the persistent memory Claude always has access to.

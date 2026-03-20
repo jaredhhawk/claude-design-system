@@ -37,11 +37,16 @@ Claude should reference the design system before generating. You'll see it readi
 
 ---
 
-### Adding Reference Images from Mobbin
+### Adding Reference Images
 
 When you want Claude to reference specific visual patterns:
 
-1. Take a screenshot from Mobbin (or anywhere)
+**Where to get screenshots (free to paid):**
+- **[Dribbble](https://dribbble.com)** — Best free option. Search by component type: "mobile bottom nav", "SaaS dashboard cards", "empty state". High-quality, large library.
+- **The apps themselves** — For specific references (Linear, Vercel, Notion, Airbnb): sign up for free and screenshot directly. Fastest for known targets.
+- **[Mobbin](https://mobbin.com)** — $120/yr. Best organized tool if you do this regularly — filtered by app, screen, and platform.
+
+1. Take a screenshot from any of the above
 2. Save it to the right folder:
    - Web component → `~/.claude/skills/design-system/patterns/web/[type]/`
    - Mobile component → `~/.claude/skills/design-system/patterns/mobile/[type]/`

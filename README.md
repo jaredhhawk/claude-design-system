@@ -114,9 +114,15 @@ Both have strong Claude training data. If you use a different stack, update `tok
 
 The `/patterns` folders are empty by default — populate them with screenshots of UI you want to reference.
 
-**Where to get them:** [Mobbin](https://mobbin.com) is the best source. Filter by component type, screenshot what you like.
+**Where to get them:**
 
-**Not sure what to grab?** See [STARTER_REFERENCES.md](STARTER_REFERENCES.md) for a curated list of broadly-praised references per pattern folder — Linear, Vercel, Things 3, and others. A good 20-minute Mobbin session to get started.
+| Source | Cost | Best for |
+|---|---|---|
+| [Dribbble](https://dribbble.com) | Free | Best free option — search by component type (e.g. "mobile onboarding", "dashboard cards"). High quality, large library. |
+| [Mobbin](https://mobbin.com) | $120/yr | Most organized — filtered by app, screen type, and platform. Worth it if you're doing this regularly. |
+| The apps themselves | Free | For specific apps (Linear, Vercel, Notion) — just sign up and screenshot directly. Faster than any tool for known targets. |
+
+**Not sure what to grab?** See [STARTER_REFERENCES.md](STARTER_REFERENCES.md) for a curated list of broadly-praised references per pattern folder — Linear, Vercel, Things 3, and others. Most are free apps you can screenshot directly in 20 minutes.
 
 **How to organize:** Save by component type, not by company.
 - Nav screenshots → `patterns/web/navigation/`
@@ -133,7 +139,7 @@ The `/patterns` folders are empty by default — populate them with screenshots 
 
 Don't want to edit `tokens.md` manually? Two options:
 
-**From Mobbin references:**
+**From screenshot references** (Dribbble, Mobbin, or direct app screenshots):
 ```
 Analyze these screenshots and extract spacing patterns, typography scale,
 color palette, border radius conventions, and shadow usage.
