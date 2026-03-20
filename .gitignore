@@ -1,0 +1,17 @@
+# Personal reference images — keep local, don't push
+patterns/**/*.png
+patterns/**/*.jpg
+patterns/**/*.jpeg
+patterns/**/*.webp
+patterns/**/*.gif
+patterns/**/*.avif
+inspiration/**/*.png
+inspiration/**/*.jpg
+inspiration/**/*.jpeg
+inspiration/**/*.webp
+inspiration/**/*.gif
+inspiration/**/*.avif
+
+# OS files
+.DS_Store
+Thumbs.db
