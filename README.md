@@ -116,12 +116,16 @@ The `/patterns` folders are empty by default — populate them with screenshots 
 
 **Where to get them:** [Mobbin](https://mobbin.com) is the best source. Filter by component type, screenshot what you like.
 
+**Not sure what to grab?** See [STARTER_REFERENCES.md](STARTER_REFERENCES.md) for a curated list of broadly-praised references per pattern folder — Linear, Vercel, Things 3, and others. A good 20-minute Mobbin session to get started.
+
 **How to organize:** Save by component type, not by company.
 - Nav screenshots → `patterns/web/navigation/`
 - Card screenshots → `patterns/mobile/cards/`
 - Full-page vibes → `inspiration/`
 
 **Making them useful:** After adding images, ask Claude to write a summary of what makes the patterns good. Paste it into the folder's `README.md`. The text summary is always accessible; images require explicit loading.
+
+> **Note:** All image files are gitignored. Your personal references stay local and never get pushed.
 
 ---
 
