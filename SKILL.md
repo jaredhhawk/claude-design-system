@@ -21,10 +21,15 @@ Automatically apply when:
 ## After Every UI Generation (Critique Loop)
 Run this automatically after generating UI:
 ```
-Evaluate against tokens.md and principles.md.
-List specific violations.
-Fix each one.
-If a new reusable pattern emerged, add it to components.md.
+1. Token check — verify spacing, color, typography, radius against tokens.md. List violations and fix.
+2. Principles check — verify hierarchy, density, consistency, states against principles.md. List violations and fix.
+3. Accessibility audit — run these checks explicitly:
+   - Do all text/background color pairs meet 4.5:1 contrast (WCAG AA)?
+   - Are all interactive elements reachable and operable by keyboard?
+   - Do all form inputs have associated labels?
+   - Are error messages and status changes announced to screen readers (aria-live, role="alert")?
+   - Is color used alone to convey any meaning? (must pair with label, icon, or shape)
+4. If a new reusable pattern emerged, add it to components.md.
 ```
 
 ## Constraints

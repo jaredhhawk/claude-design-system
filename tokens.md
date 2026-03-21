@@ -82,6 +82,18 @@ Use **zinc** for neutrals (dark-mode friendly). Use **semantic tokens** from sha
 - Gradients only acceptable in hero/marketing sections, used sparingly
 - Prefer `zinc-*` over `gray-*` for neutrals
 
+### Starter Palettes
+Use these as a starting point when a project hasn't defined its brand color yet. Each is a neutral + accent pairing with a distinct personality.
+
+| Palette | Neutral | Accent | Best for |
+|---|---|---|---|
+| **Default** | zinc | blue (`blue-600`) | Productivity tools, dashboards, B2B SaaS |
+| **Growth** | zinc | emerald (`emerald-600`) | Finance, health, sustainability, positive metrics |
+| **Creative** | slate | violet (`violet-600`) | Design tools, portfolios, creative platforms |
+| **Warm** | stone | amber (`amber-500`) | Consumer apps, food, lifestyle, hospitality |
+
+**How to apply:** Set `primary` in your shadcn theme to the accent color. Use the neutral scale for all backgrounds, borders, and muted text. Do not use more than one accent per project.
+
 ---
 
 ## Border Radius

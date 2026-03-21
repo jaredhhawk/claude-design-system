@@ -56,6 +56,8 @@ The core concept: treat your design constraints as versioned, maintainable files
 
 This is analogous to a design token system in a frontend codebase (e.g. CSS custom properties or a Tailwind config) — except it's written in plain markdown that Claude reads directly.
 
+`tokens.md` includes a **Starter Palettes** section — four opinionated neutral + accent pairings (Default/Growth/Creative/Warm) for when a project hasn't defined its brand color yet. Each has a clear "best for" descriptor so the right palette is obvious at a glance.
+
 ### Reference Image Pattern Library
 The `/patterns` folder is organized by **component type, not by company or project**. This matters because:
 - When Claude builds a table, it needs table references — not "Linear screenshots"
@@ -65,7 +67,14 @@ The `/patterns` folder is organized by **component type, not by company or proje
 Images in the pattern folders are read by Claude when explicitly referenced. The text summaries inside each README are the persistent memory Claude can access without image loading.
 
 ### The Critique Loop
-After every UI generation, Claude automatically evaluates the output against `tokens.md` and `principles.md`, lists violations, and fixes them. This single habit prevents more drift than any upfront setup. It's built into `SKILL.md` as a required step.
+After every UI generation, Claude runs a 4-step audit built into `SKILL.md`:
+
+1. **Token check** — spacing, color, typography, radius against tokens.md
+2. **Principles check** — hierarchy, density, consistency, states against principles.md
+3. **Accessibility audit** — explicit WCAG AA checks: contrast ratios, keyboard operability, form labels, screen reader announcements, color-as-sole-differentiator
+4. **Component extraction** — if a reusable pattern emerged, add it to components.md
+
+The a11y audit is a required step, not an optional pass. The rules already existed in `principles.md`; the critique loop now forces them to be checked every time.
 
 ### Component Registry (components.md)
 `components.md` starts empty and grows as you build. After each project, Claude extracts reusable patterns and adds them here. Over time, this becomes a shared component vocabulary that Claude reuses across all your projects — preventing duplicate solutions to the same problem.
