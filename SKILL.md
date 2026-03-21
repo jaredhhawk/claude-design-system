@@ -36,3 +36,4 @@ Run this automatically after generating UI:
 - Do not introduce new styles, colors, or spacing values unless explicitly instructed
 - Do not override tokens with arbitrary values
 - When in doubt, use less — simpler is almost always correct
+- Build one section or component at a time — do not generate full pages or complete apps in a single prompt

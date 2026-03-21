@@ -79,6 +79,19 @@ Alternatively, if Anthropic's `ui-ux-pro-max` skill is available, run it first a
 
 ---
 
+### Correcting Claude When It Gets It Wrong
+
+Don't describe the problem in words alone — show it the delta visually.
+
+1. Take a screenshot of Claude's output
+2. Find a reference screenshot of the pattern you actually want
+3. Share both screenshots together and name the specific difference:
+   > "The nav in your output has too much padding between items (bad). The reference uses tighter spacing with no dividers (good). Update to match."
+
+Being specific about *what's wrong* and *what right looks like* side-by-side is faster than multiple rounds of vague correction prompts. Keep this in Plan Mode — have Claude propose the correction before executing.
+
+---
+
 ### After Each Build (Critique Loop)
 
 Run this after every UI generation — Claude should do it automatically, but you can trigger it manually:
